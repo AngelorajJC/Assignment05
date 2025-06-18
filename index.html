@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My School Photography Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom gradient for the title, as Tailwind doesn't have a direct utility for text gradients */
+        .gradient-text {
+            font-size: 3rem; /* Equivalent to 48px, adjusted for responsiveness */
+            background: linear-gradient(to right, #3394ee ,#d423c5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Custom style for h2 border-bottom, if needed for exact replication */
+        h2 {
+            border-bottom: 3px solid #1d4ed8; /* blue-800 */
+            padding-bottom: 0.5rem; /* Small padding to separate text from line */
+            margin-bottom: 1rem;
+        }
+
+        /* Adjust hover effect for nav links to be slightly larger */
+        nav a:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-sans m-0 p-0 bg-white text-gray-800">
+    <header class="p-8 text-center">
+        <!-- Replicated gradient text with a custom class -->
+        <h1 class="gradient-text text-5xl md:text-6xl font-extrabold leading-tight">Welcome to Our School Photography Club</h1>
+        <p class="text-lg md:text-xl text-gray-600 mt-2">Capturing memories, one photo at a time!</p>
+    </header>
+
+    <nav id="navigation" class="bg-blue-100 p-4 border-b-2 border-blue-400">
+        <h3 class="text-blue-800 text-xl font-semibold mb-2">Navigation (Table of Contents)</h3>
+        <ul class="list-none p-0 flex flex-col md:flex-row md:justify-center md:space-x-8">
+            <li class="my-2 md:my-0"><a href="#about" class="text-blue-700 hover:text-blue-500 font-bold transition-transform duration-300 transform inline-block">About Us</a></li>
+            <li class="my-2 md:my-0"><a href="#members" class="text-blue-700 hover:text-blue-500 font-bold transition-transform duration-300 transform inline-block">Club Members</a></li>
+            <li class="my-2 md:my-0"><a href="#equipment" class="text-blue-700 hover:text-blue-500 font-bold transition-transform duration-300 transform inline-block">Equipment List</a></li>
+            <li class="my-2 md:my-0"><a href="#events" class="text-blue-700 hover:text-blue-500 font-bold transition-transform duration-300 transform inline-block">Upcoming Events</a></li>
+            <li class="my-2 md:my-0"><a href="#join-form" class="text-blue-700 hover:text-blue-500 font-bold transition-transform duration-300 transform inline-block">Join Our Club</a></li>
+            <li class="my-2 md:my-0"><a href="#resources" class="text-blue-700 hover:text-blue-500 font-bold transition-transform duration-300 transform inline-block">Useful Resources</a></li>
+        </ul>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="about" class="p-8 bg-gray-50 m-4 rounded-xl border-2 border-gray-300 shadow-md">
+            <h2 class="text-blue-800 text-3xl font-bold">About Our Photography Club</h2>
+            <img class="w-full max-w-sm rounded-xl transition-transform duration-300 hover:scale-105 mx-auto my-4" src="images/about.png" alt="Photography Club">
+            <p class="text-gray-700 leading-relaxed">Our photography club meets every Friday after school. We welcome students of all skill levels!</p>
+            <h3 class="text-blue-800 text-2xl font-semibold mt-6 mb-3">What We Do:</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li>Weekly photo walks around campus</li>
+                <li>Photography technique workshops</li>
+                <li>Photo editing sessions</li>
+                <li>Monthly photo competitions</li>
+                <li>Guest speaker presentations</li>
+            </ul>
+            <h3 class="text-blue-800 text-2xl font-semibold mt-6 mb-3">How to Improve Your Photography:</h3>
+            <ol class="list-decimal list-inside text-gray-700 space-y-1">
+                <li>Learn the rule of thirds</li>
+                <li>Practice taking photos daily</li>
+                <li>Study lighting conditions</li>
+                <li>Experiment with different angles</li>
+                <li>Edit your photos thoughtfully</li>
+                <li>Share your work for feedback</li>
+            </ol>
+        </section>
+
+        <section id="members" class="p-8 bg-gray-50 m-4 rounded-xl border-2 border-gray-300 shadow-md">
+            <h2 class="text-blue-800 text-3xl font-bold">Club Members & Roles</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse mt-4">
+                    <thead>
+                        <tr>
+                            <th class="border border-gray-300 p-3 text-left bg-blue-100 text-gray-700">Name</th>
+                            <th class="border border-gray-300 p-3 text-left bg-blue-100 text-gray-700">Grade</th>
+                            <th class="border border-gray-300 p-3 text-left bg-blue-100 text-gray-700">Role</th>
+                            <th class="border border-gray-300 p-3 text-left bg-blue-100 text-gray-700">Favorite Photography Style</th>
+                            <th class="border border-gray-300 p-3 text-left bg-blue-100 text-gray-700">Years in Club</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="border border-gray-300 p-3">Sarah Johnson</td><td class="border border-gray-300 p-3">12th</td><td class="border border-gray-300 p-3">Club President</td><td class="border border-gray-300 p-3">Portrait Photography</td><td class="border border-gray-300 p-3">3</td></tr>
+                        <tr><td class="border border-gray-300 p-3">Mike Chen</td><td class="border border-gray-300 p-3">11th</td><td class="border border-gray-300 p-3">Equipment Manager</td><td class="border border-gray-300 p-3">Nature Photography</td><td class="border border-gray-300 p-3">2</td></tr>
+                        <tr><td class="border border-gray-300 p-3">Emma Rodriguez</td><td class="border border-gray-300 p-3">10th</td><td class="border border-gray-300 p-3">Event Coordinator</td><td class="border border-gray-300 p-3">Street Photography</td><td class="border border-gray-300 p-3">1</td></tr>
+                        <tr><td class="border border-gray-300 p-3">David Kim</td><td class="border border-gray-300 p-3">9th</td><td class="border border-gray-300 p-3">Social Media Manager</td><td class="border border-gray-300 p-3">Macro Photography</td><td class="border border-gray-300 p-3">1</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="equipment" class="p-8 bg-gray-50 m-4 rounded-xl border-2 border-gray-300 shadow-md">
+            <h2 class="text-blue-800 text-3xl font-bold">Available Equipment</h2>
+            <img class="w-full max-w-sm rounded-xl transition-transform duration-300 hover:scale-105 mx-auto my-4" src="./images/camera.png" alt="Camera Equipment">
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse mt-4">
+                    <thead>
+                        <tr>
+                            <th class="border border-gray-300 p-3 text-left bg-blue-100 text-gray-700">Equipment</th>
+                            <th class="border border-gray-300 p-3 text-left bg-blue-100 text-gray-700">Brand/Model</th>
+                            <th class="border border-gray-300 p-3 text-left bg-blue-100 text-gray-700">Quantity</th>
+                            <th class="border border-gray-300 p-3 text-left bg-blue-100 text-gray-700">Condition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="border border-gray-300 p-3">DSLR Camera</td><td class="border border-gray-300 p-3">Canon EOS Rebel T7</td><td class="border border-gray-300 p-3">5</td><td class="border border-gray-300 p-3">Excellent</td></tr>
+                        <tr><td class="border border-gray-300 p-3">Tripod</td><td class="border border-gray-300 p-3">Manfrotto Compact</td><td class="border border-gray-300 p-3">8</td><td class="border border-gray-300 p-3">Good</td></tr>
+                        <tr><td class="border border-gray-300 p-3">Flash Unit</td><td class="border border-gray-300 p-3">Canon Speedlite</td><td class="border border-gray-300 p-3">3</td><td class="border border-gray-300 p-3">Good</td></tr>
+                        <tr><td class="border border-gray-300 p-3">Memory Cards</td><td class="border border-gray-300 p-3">SanDisk 64GB</td><td class="border border-gray-300 p-3">15</td><td class="border border-gray-300 p-3">Excellent</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="events" class="p-8 bg-gray-50 m-4 rounded-xl border-2 border-gray-300 shadow-md">
+            <h2 class="text-blue-800 text-3xl font-bold">Upcoming Events</h2>
+            <ul class="list-none p-0 space-y-4">
+                <li>
+                    <strong class="text-lg text-gray-800 block mb-1">October Events</strong>
+                    <ul class="list-disc list-inside ml-4 text-gray-700 space-y-1">
+                        <li>Oct 5: Autumn Photo Walk</li>
+                        <li>Oct 12: Portrait Workshop</li>
+                        <li>Oct 19: Guest Speaker - Professional Photographer</li>
+                        <li>Oct 26: Monthly Competition Judging</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="text-lg text-gray-800 block mb-1">November Events</strong>
+                    <ul class="list-disc list-inside ml-4 text-gray-700 space-y-1">
+                        <li>Nov 2: Black & White Photography Workshop</li>
+                        <li>Nov 9: Equipment Maintenance Day</li>
+                        <li>Nov 16: Photo Editing Marathon</li>
+                        <li>Nov 23: Thanksgiving Break - No Meeting</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="join-form" class="p-8 bg-gray-50 m-4 rounded-xl border-2 border-gray-300 shadow-md">
+            <h2 class="text-blue-800 text-3xl font-bold">Join Our Photography Club</h2>
+            <form action="#" method="post" class="space-y-4">
+                <div>
+                    <label for="student-name" class="block text-gray-700 text-sm font-bold mb-1">Full Name:</label>
+                    <input type="text" id="student-name" name="student-name" required class="block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-1">Email Address:</label>
+                    <input type="email" id="email" name="email" required class="block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="grade" class="block text-gray-700 text-sm font-bold mb-1">Grade Level:</label>
+                    <select id="grade" name="grade" required class="block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="">Select your grade</option>
+                        <option value="9">9th Grade</option>
+                        <option value="10">10th Grade</option>
+                        <option value="11">11th Grade</option>
+                        <option value="12">12th Grade</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="experience" class="block text-gray-700 text-sm font-bold mb-1">Photography Experience:</label>
+                    <select id="experience" name="experience" class="block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <label class="block text-gray-700 text-sm font-bold">Do you own a camera?</label>
+                    <input type="radio" id="camera-yes" name="camera" value="yes" class="mr-1">
+                    <label for="camera-yes" class="text-gray-700">Yes</label>
+                    <input type="radio" id="camera-no" name="camera" value="no" class="mr-1">
+                    <label for="camera-no" class="text-gray-700">No</label>
+                </div>
+                <div>
+                    <label class="block text-gray-700 text-sm font-bold mb-1">Photography Interests (check all that apply):</label>
+                    <div class="flex flex-wrap gap-x-4">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="portrait" name="interests" value="portrait" class="mr-1">
+                            <label for="portrait" class="text-gray-700">Portrait</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="landscape" name="interests" value="landscape" class="mr-1">
+                            <label for="landscape" class="text-gray-700">Landscape</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="sports" name="interests" value="sports" class="mr-1">
+                            <label for="sports" class="text-gray-700">Sports</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="macro" name="interests" value="macro" class="mr-1">
+                            <label for="macro" class="text-gray-700">Macro</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="why-join" class="block text-gray-700 text-sm font-bold mb-1">Why do you want to join our club?</label>
+                    <textarea id="why-join" name="why-join" rows="4" placeholder="Tell us what interests you about photography" class="block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <button type="submit" class="w-1/2 mx-auto py-2 px-4 bg-blue-600 text-white font-bold rounded-md cursor-pointer transition-transform duration-300 hover:scale-105 hover:bg-blue-700 block">Submit Application</button>
+            </form>
+        </section>
+
+        <section id="resources" class="p-8 bg-gray-50 m-4 rounded-xl border-2 border-gray-300 shadow-md">
+            <h2 class="text-blue-800 text-3xl font-bold">Useful Photography Resources</h2>
+            <h3 class="text-blue-800 text-2xl font-semibold mt-6 mb-3">Educational Websites:</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li><a href="https://www.digitalcameraworld.com/tutorials" target="_blank" class="text-blue-700 hover:underline">Digital Camera World Tutorials</a></li>
+                <li><a href="https://petapixel.com" target="_blank" class="text-blue-700 hover:underline">PetaPixel - Photography News & Tutorials</a></li>
+                <li><a href="https://www.youtube.com/channel/UC7T8roVtC_3afWKTOGtLlBA" target="_blank" class="text-blue-700 hover:underline">Sean Tucker Photography YouTube Channel</a></li>
+            </ul>
+            <h3 class="text-blue-800 text-2xl font-semibold mt-6 mb-3">Free Photo Editing Software:</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li><a href="https://www.gimp.org" target="_blank" class="text-blue-700 hover:underline">GIMP (GNU Image Manipulation Program)</a></li>
+                <li><a href="https://www.canva.com" target="_blank" class="text-blue-700 hover:underline">Canva Online Editor</a></li>
+            </ul>
+            <h3 class="text-blue-800 text-2xl font-semibold mt-6 mb-3">Internal Navigation Links:</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li><a href="#navigation" class="text-blue-700 hover:underline">Back to Top Navigation</a></li>
+                <li><a href="#about" class="text-blue-700 hover:underline">About Section</a></li>
+                <li><a href="#members" class="text-blue-700 hover:underline">Member Information</a></li>
+                <li><a href="#join-form" class="text-blue-700 hover:underline">Membership Form</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="text-center bg-blue-100 p-4 text-gray-700 mt-8 rounded-t-xl">
+        <p class="text-sm">&copy; 2025 School Photography Club. All rights reserved.</p>
+        <p class="text-sm">Contact us: <a href="mailto:photoclub@school.edu" class="text-blue-700 hover:underline">photoclub@school.edu</a></p>
+    </footer>
+</body>
+</html>
+
